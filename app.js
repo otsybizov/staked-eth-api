@@ -24,5 +24,6 @@ app.set('contract', contract);
 app.use('/',  require('./routes/index'));
 app.use('/staked-eth', CreateStakedEthRouter(contract));
 app.use('/txes',  require('./routes/txes'));
+app.use('/value-transfers',  require('./routes/value.transfers'));
 
 module.exports = app;
